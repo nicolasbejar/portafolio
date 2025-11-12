@@ -1,6 +1,6 @@
 # Nicolas Bejar Arambula - Portfolio Website
 
-A modern, responsive portfolio website showcasing professional experience, education, and technical skills for Stanford Masters Application.
+A modern, responsive portfolio website showcasing professional experience, education, and technical skills.
 
 ## 🌟 Features
 
@@ -189,8 +189,8 @@ This project is open source and available under the [MIT License](LICENSE).
 - Email: nicolasbejar@gmail.com
 - LinkedIn: [nicolas-bejar-2a7140190](https://linkedin.com/in/nicolas-bejar-2a7140190)
 - GitHub: [nicolasbejar](https://github.com/nicolasbejar)
-- Phone: +1 (425) 652-3056
 
 ---
+
 
 Built with ❤️ for sustainable computing and innovation | © 2024 Nicolas Bejar Arambula
