@@ -1,0 +1,47 @@
+{
+  "name": "stanford-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Stanford Masters Application",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "deploy": "gh-pages -d .",
+    "validate": "html5validator --root . --ignore-re \".*node_modules.*\"",
+    "lighthouse": "lighthouse http://localhost:8000 --output=json --output=html --output-path=./lighthouse-report",
+    "build": "echo 'No build step required for static site'",
+    "test": "echo 'Tests will be added for form validation and JS functionality'"
+  },
+  "keywords": [
+    "portfolio",
+    "resume",
+    "stanford",
+    "software-engineer",
+    "web-development",
+    "responsive-design"
+  ],
+  "author": {
+    "name": "Nicolas Bejar Arambula",
+    "email": "nicolasbejar@gmail.com",
+    "url": "https://nicolas-bejar.vercel.app"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicolasbejar/stanford-portfolio.git"
+  },
+  "homepage": "https://nicolasbejar.github.io/stanford-portfolio",
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "html5validator": "^0.4.2",
+    "lighthouse": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
