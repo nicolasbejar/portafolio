@@ -757,6 +757,36 @@ section {
     color: var(--text-secondary);
 }
 
+.project-actions {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.repo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.repo-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.repo-btn i {
+    font-size: 1rem;
+}
+
 /* Contact Section */
 .contact-content {
     max-width: 600px;
@@ -823,6 +853,16 @@ section {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -913,6 +953,29 @@ section {
         width: 100%;
         justify-content: center;
     }
+
+    .project-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .repo-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .project-tech {
+        justify-content: center;
+    }
+
+    .contact-details {
+        gap: 1.5rem;
+    }
+
+    .contact-item {
+        padding: 1.25rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -951,6 +1014,73 @@ section {
 
     .timeline-marker {
         left: 11px !important;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .project-tech span {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stat {
+        padding: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .social-links a {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .project-card {
+        padding: 1.25rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
+    }
+
+    .btn, .repo-btn {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.85rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .nav-container {
+        padding: 0 1rem;
     }
 }
 
